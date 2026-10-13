@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import PlanPicker from "./components/PlanPicker";
 import Footer from "./components/Footer";
+import Waitlist from "./components/Waitlist";
 
 function App() {
   const [seats, setSeats] = useState(1);
@@ -30,6 +31,7 @@ function App() {
         onAddMonth={handleAddMonth}
         onReset={handleReset}git 
       />
+      <Waitlist />
       <Footer />
     </div>
   );
